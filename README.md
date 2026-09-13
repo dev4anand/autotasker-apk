@@ -8,22 +8,22 @@ Official release repository for **AutoTasker** Android application binary builds
 
 | Version | Build Code | Release Date | Download Link |
 | :--- | :--- | :--- | :--- |
-| **v4.3.0** (Latest) | `16` | Sep 13, 2026 | [⬇️ Download AutoTasker-v4.3.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v4.3.0.apk) |
+| **v4.3.1** (Latest) | `17` | Sep 13, 2026 | [⬇️ Download AutoTasker-v4.3.1.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v4.3.1.apk) |
 
 ---
 
-## ✨ Features in v4.3.0
+## ✨ Features in v4.3.1
 
-- 📶 **Mobile Data Control Action (`TOGGLE_MOBILE_DATA`)**: Add new action to turn Mobile Data `ON`, `OFF`, or open the Mobile Network settings panel with 1-tap choice pills!
-- 🎨 **Dedicated Trigger & Action Icons**: Replaced generic lightning bolt icons with custom, matching Material icons for every trigger (Wi-Fi, Bluetooth, Location, Charger, Call, Airplane, Schedule, Headset, Battery) and action (Email, Call, Photo, Torch, Sound, Volume, Clipboard, Apps, Data)!
-- 🧹 **Automatic APK Cache Cleanup**: Automatically purges stale downloaded `.apk` files prior to updates to save user disk space.
-- 📱 **Sleek & Uncluttered Task Cards**: Compact home task cards with single-line truncated task titles and action summary chips.
+- 📱 **Clean Action Cards & Unclustered Buttons**: Removed bullseye emoji from action summary chips for a clean aesthetic, added extra spacing between play arrow and delete buttons, and expanded action summary padding.
+- 📶 **Mobile Data Control Action (`TOGGLE_MOBILE_DATA`)**: Turn Mobile Data `ON`, `OFF`, or open Mobile Network settings panel.
+- 🎨 **Dedicated Trigger & Action Icons**: Custom matching Material icons across all triggers and actions.
+- 🧹 **Automatic APK Cache Cleanup**: Automatically purges stale downloaded `.apk` files prior to updates.
 
 ---
 
 ## 🛠️ Installation Instructions
 
-1. Download `AutoTasker-v4.3.0.apk` using the link above.
+1. Download `AutoTasker-v4.3.1.apk` using the link above.
 2. Open the file on your Android phone.
 3. If prompted, allow installation from unknown sources for your browser/file manager.
 4. Open **AutoTasker** and grant the required permissions (Camera, Location, Calls, Notifications).
