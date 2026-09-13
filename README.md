@@ -8,22 +8,22 @@ Official release repository for **AutoTasker** Android application binary builds
 
 | Version | Build Code | Release Date | Download Link |
 | :--- | :--- | :--- | :--- |
-| **v4.3.1** (Latest) | `17` | Sep 13, 2026 | [⬇️ Download AutoTasker-v4.3.1.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v4.3.1.apk) |
+| **v4.4.0** (Latest) | `18` | Sep 13, 2026 | [⬇️ Download AutoTasker-v4.4.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v4.4.0.apk) |
 
 ---
 
-## ✨ Features in v4.3.1
+## ✨ Features in v4.4.0
 
-- 📱 **Clean Action Cards & Unclustered Buttons**: Removed bullseye emoji from action summary chips for a clean aesthetic, added extra spacing between play arrow and delete buttons, and expanded action summary padding.
-- 📶 **Mobile Data Control Action (`TOGGLE_MOBILE_DATA`)**: Turn Mobile Data `ON`, `OFF`, or open Mobile Network settings panel.
-- 🎨 **Dedicated Trigger & Action Icons**: Custom matching Material icons across all triggers and actions.
-- 🧹 **Automatic APK Cache Cleanup**: Automatically purges stale downloaded `.apk` files prior to updates.
+- 📶 **Wi-Fi & Bluetooth Connected Triggers Fix**: Declared missing network & Bluetooth permissions (`ACCESS_NETWORK_STATE`, `BLUETOOTH_CONNECT`, `BLUETOOTH_SCAN`) and registered system broadcast intent-filters (`STATE_CHANGE`, `WIFI_STATE_CHANGED`, `CONNECTIVITY_CHANGE`, `ACL_CONNECTED`, `CONNECTION_STATE_CHANGED`) to reliably trigger actions upon connection.
+- 🔦 **Blink Torch Action**: Added `Blink Flashlight` mode with custom user-selected duration in seconds (1s, 2s, 3s, 5s, 10s or custom).
+- 🧹 **Clean Plain Text Choice Pills**: Removed cluttering emojis from choice buttons across the builder interface.
+- ⚙️ **Settings Screen Update Fix**: Settings screen update button now displays real-time download percentage, handles unknown app source permissions, and launches package installer reliably.
 
 ---
 
 ## 🛠️ Installation Instructions
 
-1. Download `AutoTasker-v4.3.1.apk` using the link above.
+1. Download `AutoTasker-v4.4.0.apk` using the link above.
 2. Open the file on your Android phone.
 3. If prompted, allow installation from unknown sources for your browser/file manager.
 4. Open **AutoTasker** and grant the required permissions (Camera, Location, Calls, Notifications).
