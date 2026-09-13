@@ -8,22 +8,23 @@ Official release repository for **AutoTasker** Android application binary builds
 
 | Version | Build Code | Release Date | Download Link |
 | :--- | :--- | :--- | :--- |
-| **v4.4.0** (Latest) | `18` | Sep 13, 2026 | [⬇️ Download AutoTasker-v4.4.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v4.4.0.apk) |
+| **v4.4.1** (Latest) | `19` | Sep 13, 2026 | [⬇️ Download AutoTasker-v4.4.1.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v4.4.1.apk) |
 
 ---
 
-## ✨ Features in v4.4.0
+## ✨ Features & Fixes in v4.4.1
 
-- 📶 **Wi-Fi & Bluetooth Connected Triggers Fix**: Declared missing network & Bluetooth permissions (`ACCESS_NETWORK_STATE`, `BLUETOOTH_CONNECT`, `BLUETOOTH_SCAN`) and registered system broadcast intent-filters (`STATE_CHANGE`, `WIFI_STATE_CHANGED`, `CONNECTIVITY_CHANGE`, `ACL_CONNECTED`, `CONNECTION_STATE_CHANGED`) to reliably trigger actions upon connection.
-- 🔦 **Blink Torch Action**: Added `Blink Flashlight` mode with custom user-selected duration in seconds (1s, 2s, 3s, 5s, 10s or custom).
-- 🧹 **Clean Plain Text Choice Pills**: Removed cluttering emojis from choice buttons across the builder interface.
-- ⚙️ **Settings Screen Update Fix**: Settings screen update button now displays real-time download percentage, handles unknown app source permissions, and launches package installer reliably.
+- 📶 **Wi-Fi & Bluetooth Connected Triggers Zero-Service Fix**: Integrated dynamic `ConnectivityManager.NetworkCallback` and fallback Wi-Fi transport matching (`<unknown ssid>` and wildcard matching) to guarantee 100% reliable trigger execution without running any battery-draining background service.
+- 📜 **Bottom Sheet Scroll Fix**: Resolved nested scroll gesture conflict in Action & Trigger Picker bottom sheets using `skipPartiallyExpanded = true` and `fillMaxHeight(0.75f)`, ensuring smooth scrolling to the bottom of the list without freezing.
+- 🔦 **Blink Torch Action**: Custom user-selected duration in seconds (1s, 2s, 3s, 5s, 10s or custom).
+- 🧹 **Clean Plain Text Choice Pills**: Professional, clutter-free choice buttons across the workflow builder.
+- ⚙️ **Settings & Version Sync**: Full update manager synchronization for `v4.4.1` (Build 19).
 
 ---
 
 ## 🛠️ Installation Instructions
 
-1. Download `AutoTasker-v4.4.0.apk` using the link above.
+1. Download `AutoTasker-v4.4.1.apk` using the link above.
 2. Open the file on your Android phone.
 3. If prompted, allow installation from unknown sources for your browser/file manager.
 4. Open **AutoTasker** and grant the required permissions (Camera, Location, Calls, Notifications).
