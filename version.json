@@ -1,7 +1,7 @@
 {
-  "latest_version_code": 8,
-  "latest_version_name": "3.5.0",
-  "download_url": "https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v3.5.0.apk",
+  "latest_version_code": 9,
+  "latest_version_name": "3.6.0",
+  "download_url": "https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v3.6.0.apk",
   "is_app_enabled": true,
   "kill_switch_message": "AutoTasker is currently under maintenance. Please check back later."
 }
