@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AutoTasker v3.7.0 - Cosmic Android Automation Engine</title>
     <meta name="description" content="AutoTasker v3.7.0 turns system events into powerful automated workflows. Trigger silent photos, send emails offline, launch any installed app, control settings, and manage scheduled alarms with AM/PM & date recurrence.">
     <meta name="keywords" content="AutoTasker, Android Automation, Tasker Alternative, Event Triggers, Offline Queue, AM PM Alarm, Open App Action, Android APK">
@@ -26,20 +26,31 @@
         <a href="#" class="logo-container">
             <div class="logo-icon">
                 <svg viewBox="0 0 24 24">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    <path d="M 2.016 12 L 10.008 4.008 L 10.008 8.976 L 21.984 8.976 L 13.992 19.992 L 13.992 15.024 Z"/>
                 </svg>
             </div>
             <span class="logo-text">AutoTasker</span>
         </a>
 
-        <ul class="nav-links">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#simulator">Live Simulator</a></li>
             <li><a href="#release-notes">v3.7.0 Release Notes</a></li>
             <li><a href="#requirements">Requirements</a></li>
+            <li class="nav-mobile-btn">
+                <a href="AutoTasker-v3.7.0.apk" class="btn-primary" download>
+                    Download APK v3.7.0
+                </a>
+            </li>
         </ul>
 
-        <a href="AutoTasker-v3.7.0.apk" class="btn-primary" download>
+        <a href="AutoTasker-v3.7.0.apk" class="btn-primary nav-desktop-btn" download>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download APK <span class="version-num">v3.7.0</span>
         </a>
@@ -49,53 +60,43 @@
     <header class="hero">
         <div class="hero-content">
             <div class="version-badge">
-                <span style="width:8px; height:8px; background:var(--teal-cyan); border-radius:50%; display:inline-block; box-shadow:0 0 10px var(--teal-cyan);"></span>
+                <span class="pulse-dot"></span>
                 VERSION 3.7.0 RELEASED · OFFLINE QUEUE & APP LAUNCHER
             </div>
-            <h1 class="hero-title">Automate Your Android. Powered by Cosmic Precision.</h1>
+            
+            <h1 class="hero-title">Automate Your Android.<br>Powered by Cosmic Precision.</h1>
+            
             <p class="hero-subtitle">
                 AutoTasker turns system events into background automated workflows. Trigger silent photo captures, queue emails while offline, launch any installed app, toggle location state, and manage scheduled alarms with AM/PM & date recurrence.
             </p>
+
             <div class="hero-cta">
-                <a href="AutoTasker-v3.7.0.apk" class="btn-primary" download>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <a href="AutoTasker-v3.7.0.apk" class="btn-primary btn-lg" download>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Download Direct APK (v3.7.0)
                 </a>
-                <a href="#features" class="btn-secondary">
+                <a href="#features" class="btn-secondary btn-lg">
                     Explore Engine Features
                 </a>
             </div>
-        </div>
 
-        <!-- Phone Mockup Container -->
-        <div class="hero-visual">
-            <div class="phone-mockup">
-                <div class="phone-screen">
-                    <div class="app-bar-mock">
-                        <span class="app-title-mock">⚡ AutoTasker v3.7</span>
-                        <span class="service-status-pill">● Engine Active</span>
-                    </div>
-
-                    <!-- Mock Workflow Item 1 -->
-                    <div class="workflow-card-mock">
-                        <span class="mock-tag">WHEN SCREEN ILLUMINATES</span>
-                        <div class="mock-title">Screen Turn On Security</div>
-                        <div class="mock-detail">Capture Silent Photo + Sound Profile</div>
-                    </div>
-
-                    <!-- Mock Workflow Item 2 -->
-                    <div class="workflow-card-mock">
-                        <span class="mock-tag">OFFLINE QUEUE AUTOMATION</span>
-                        <div class="mock-title">Airplane Mode Email Dispatcher</div>
-                        <div class="mock-detail">Queues email offline ➔ Auto-sends when connected</div>
-                    </div>
-
-                    <!-- Mock Workflow Item 3 -->
-                    <div class="workflow-card-mock">
-                        <span class="mock-tag">SCHEDULED RECURRENCE</span>
-                        <div class="mock-title">Daily Morning Routine (09:00 AM)</div>
-                        <div class="mock-detail">Open Particular App: YouTube & Set Volume</div>
-                    </div>
+            <!-- Highlights Bar -->
+            <div class="hero-highlights">
+                <div class="highlight-item">
+                    <span class="highlight-val">100%</span>
+                    <span class="highlight-lbl">Offline Ready</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-val">0</span>
+                    <span class="highlight-lbl">Tracking / Ads</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-val">Android 8+</span>
+                    <span class="highlight-lbl">Compatibility</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-val">14+</span>
+                    <span class="highlight-lbl">Triggers & Actions</span>
                 </div>
             </div>
         </div>
@@ -212,7 +213,7 @@
                 </div>
             </div>
 
-            <button id="sim-run-btn" class="btn-primary" style="width:100%; justify-content:center; margin-bottom:1.5rem;">
+            <button id="sim-run-btn" class="btn-primary sim-btn">
                 🚀 Test Run Workflow Simulation
             </button>
 
@@ -226,11 +227,15 @@
     <section id="release-notes" class="section">
         <div class="release-notes-box">
             <span class="version-badge">RELEASE NOTES</span>
-            <h3 style="font-family:var(--font-heading); font-size:1.6rem; margin-top:0.5rem;">AutoTasker Version 3.7.0 Changelog</h3>
+            <h3 class="release-title">AutoTasker Version 3.7.0 Changelog</h3>
             <ul class="release-list">
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Offline Task Queue:</strong> Internet-dependent actions (such as sending emails via SMTP) triggered in Airplane mode or offline are automatically queued into Room DB and sent as soon as network connects.</div>
+                    <div><strong>Bulletproof Update Engine:</strong> Automatic cache-busting, redirect handling, and automatic Android 8.0+ Unknown App Installation permission prompt.</div>
+                </li>
+                <li class="release-item">
+                    <span class="release-bullet"></span>
+                    <div><strong>Offline Task Queue:</strong> Internet-dependent actions triggered in Airplane mode or offline are automatically queued into Room DB and sent as soon as network connects.</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
@@ -238,23 +243,23 @@
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>AM/PM & Recurrence Time Scheduling:</strong> Alarm scheduling now supports 12-hour AM/PM input, target date (`YYYY-MM-DD`), and Daily, Monthly, or Yearly recurrence rules.</div>
+                    <div><strong>AM/PM & Recurrence Scheduling:</strong> Alarm scheduling supports 12-hour AM/PM input, target date (`YYYY-MM-DD`), and Daily, Monthly, or Yearly recurrence rules.</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Event Trigger Reliability:</strong> Fixed `SCREEN_ON` dynamic broadcast listening, `LOCATION_STATE_CHANGED` GPS provider detection, `AIRPLANE_MODE` target state filtering, and `ACTION_BOOT_COMPLETED` background service recovery.</div>
+                    <div><strong>Event Trigger Reliability:</strong> Fixed `SCREEN_ON` dynamic broadcast listening, `LOCATION_STATE_CHANGED` GPS provider detection, `AIRPLANE_MODE` target state filtering, and background service recovery.</div>
                 </li>
             </ul>
         </div>
     </section>
 
     <!-- System Requirements -->
-    <section id="requirements" class="section" style="text-align:center;">
-        <h3 style="font-family:var(--font-heading); font-size:1.5rem; margin-bottom:1rem;">System Requirements & Privacy</h3>
-        <p style="color:var(--text-muted); max-width:600px; margin:0 auto 2rem auto;">
+    <section id="requirements" class="section text-center">
+        <h3 class="req-title">System Requirements & Privacy</h3>
+        <p class="req-desc">
             Requires Android 8.0 (Oreo) or higher (API level 26+). 100% Privacy Focused — all automation rules, photos, and logs run locally on your device without third-party tracking.
         </p>
-        <a href="AutoTasker-v3.7.0.apk" class="btn-primary" download>
+        <a href="AutoTasker-v3.7.0.apk" class="btn-primary btn-lg" download>
             Download AutoTasker v3.7.0 APK
         </a>
     </section>

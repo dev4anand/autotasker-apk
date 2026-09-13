@@ -1,10 +1,32 @@
-// AutoTasker v3.7.0 Space-Themed Interactive Engine
+// AutoTasker v3.7.0 Space-Themed Interactive Engine & Mobile Navigation
 
 document.addEventListener('DOMContentLoaded', () => {
     initStarfield();
     initSimulator();
+    initMobileNav();
     fetchVersionInfo();
 });
+
+// Mobile Navigation Toggle
+function initMobileNav() {
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    if (!toggleBtn || !navLinks) return;
+
+    toggleBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        toggleBtn.classList.toggle('active');
+    });
+
+    // Close menu when tapping a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            toggleBtn.classList.remove('active');
+        });
+    });
+}
 
 // Canvas Starfield & Shooting Stars Engine
 function initStarfield() {
