@@ -8,23 +8,22 @@ Official release repository for **AutoTasker** Android application binary builds
 
 | Version | Build Code | Release Date | Download Link |
 | :--- | :--- | :--- | :--- |
-| **v4.2.0** (Latest) | `15` | Sep 13, 2026 | [⬇️ Download AutoTasker-v4.2.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v4.2.0.apk) |
+| **v4.3.0** (Latest) | `16` | Sep 13, 2026 | [⬇️ Download AutoTasker-v4.3.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v4.3.0.apk) |
 
 ---
 
-## ✨ Features in v4.2.0
+## ✨ Features in v4.3.0
 
-- 📱 **Sleek & Uncluttered Task Cards**: Complete UI redesign for dashboard rule cards! Task titles are neatly aligned at the top with line-truncation, and multiple task actions are combined into a clean, single-line action summary badge (`🎯 N Actions: FirstAction, SecondAction +X more`), keeping the home screen clean, compact, and scannable without hiding active tasks.
-- 🛠️ **Redesigned Action Parameter Controls & Explicit 1-Tap Pills**: Interactive 1-tap choice pill buttons (`ON`, `OFF`, `SILENT`, `VIBRATE`, `NORMAL`, `FRONT`, `BACK`, `0-100%`) with explicit explanatory guidance across all actions.
-- 📶 **Wi-Fi Control Action**: Select target state: `ON`, `OFF`, or `PANEL`.
-- 🔵 **Bluetooth Control Action**: Toggle Bluetooth with `ON`, `OFF`, or `PANEL`.
-- 📍 **Location Geofence Range Trigger**: Define exact location coordinates and custom radius fence in meters (30m, 50m, 100m) with 1-tap GPS auto-fill.
+- 📶 **Mobile Data Control Action (`TOGGLE_MOBILE_DATA`)**: Add new action to turn Mobile Data `ON`, `OFF`, or open the Mobile Network settings panel with 1-tap choice pills!
+- 🎨 **Dedicated Trigger & Action Icons**: Replaced generic lightning bolt icons with custom, matching Material icons for every trigger (Wi-Fi, Bluetooth, Location, Charger, Call, Airplane, Schedule, Headset, Battery) and action (Email, Call, Photo, Torch, Sound, Volume, Clipboard, Apps, Data)!
+- 🧹 **Automatic APK Cache Cleanup**: Automatically purges stale downloaded `.apk` files prior to updates to save user disk space.
+- 📱 **Sleek & Uncluttered Task Cards**: Compact home task cards with single-line truncated task titles and action summary chips.
 
 ---
 
 ## 🛠️ Installation Instructions
 
-1. Download `AutoTasker-v4.2.0.apk` using the link above.
+1. Download `AutoTasker-v4.3.0.apk` using the link above.
 2. Open the file on your Android phone.
 3. If prompted, allow installation from unknown sources for your browser/file manager.
 4. Open **AutoTasker** and grant the required permissions (Camera, Location, Calls, Notifications).
