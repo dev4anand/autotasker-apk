@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AutoTasker v4.4.3 - Cosmic Android Automation Engine</title>
-    <meta name="description" content="AutoTasker v4.4.3 features Toggle Background Automation Engine Task Action, Hybrid Foreground Engine with Settings toggle, Wi-Fi & Bluetooth trigger fixes, and bottom sheet scroll fixes.">
-    <meta name="keywords" content="AutoTasker, Android Automation, Background Engine Action, Wi-Fi Trigger Fix, Bluetooth Trigger Fix, Background Engine Service, Mobile Data Toggle, Android APK">
+    <title>AutoTasker v4.5.0 - Cosmic Android Automation Engine</title>
+    <meta name="description" content="AutoTasker v4.5.0 features Notification Keyword Trigger, Run Sub-Workflow Action, Toggle Background Engine Action, and Notification Listener integration.">
+    <meta name="keywords" content="AutoTasker, Android Automation, Notification Keyword Trigger, Run Task Workflow, Background Engine Action, Wi-Fi Trigger Fix, Bluetooth Trigger Fix, Android APK">
     
     <!-- Open Graph SEO -->
-    <meta property="og:title" content="AutoTasker v4.4.3 - Cosmic Android Automation Engine">
-    <meta property="og:description" content="Automate your Android device with Background Engine task action & Settings toggle, zero battery drain, and instant Wi-Fi/Bluetooth triggers when app is closed.">
+    <meta property="og:title" content="AutoTasker v4.5.0 - Cosmic Android Automation Engine">
+    <meta property="og:description" content="Automate your Android device with Notification Keyword triggers, Sub-Workflow execution, zero battery drain, and instant background triggers.">
     <meta property="og:type" content="website">
 
     <!-- CSS Stylesheet -->
@@ -41,18 +41,18 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#simulator">Live Simulator</a></li>
-            <li><a href="#release-notes">v4.4.3 Release Notes</a></li>
+            <li><a href="#release-notes">v4.5.0 Release Notes</a></li>
             <li><a href="#requirements">Requirements</a></li>
             <li class="nav-mobile-btn">
-                <a href="AutoTasker-v4.4.3.apk" class="btn-primary" download>
-                    Download APK v4.4.3
+                <a href="AutoTasker-v4.5.0.apk" class="btn-primary" download>
+                    Download APK v4.5.0
                 </a>
             </li>
         </ul>
 
-        <a href="AutoTasker-v4.4.3.apk" class="btn-primary nav-desktop-btn" download>
+        <a href="AutoTasker-v4.5.0.apk" class="btn-primary nav-desktop-btn" download>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download APK <span class="version-num">v4.4.3</span>
+            Download APK <span class="version-num">v4.5.0</span>
         </a>
     </nav>
 
@@ -61,19 +61,19 @@
         <div class="hero-content">
             <div class="version-badge">
                 <span class="pulse-dot"></span>
-                VERSION 4.4.3 RELEASED · TOGGLE BACKGROUND AUTOMATION ENGINE TASK ACTION
+                VERSION 4.5.0 RELEASED · NOTIFICATION KEYWORD TRIGGERS & SUB-WORKFLOW EXECUTION
             </div>
             
             <h1 class="hero-title">Automate Your Android.<br>Powered by Cosmic Precision.</h1>
             
             <p class="hero-subtitle">
-                AutoTasker turns location arrival and system events into automated workflows with 0% idle battery usage. Featuring a new task action to toggle the Background Automation Engine ON/OFF programmatically, plus the Settings background service toggle.
+                AutoTasker turns incoming notification keywords, location arrival, and system events into automated workflows. Execute task subroutines, control background engines, and trigger custom actions with 0% idle battery usage.
             </p>
 
             <div class="hero-cta">
-                <a href="AutoTasker-v4.4.3.apk" class="btn-primary btn-lg" download>
+                <a href="AutoTasker-v4.5.0.apk" class="btn-primary btn-lg" download>
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    Download Direct APK (v4.4.3)
+                    Download Direct APK (v4.5.0)
                 </a>
                 <a href="#features" class="btn-secondary btn-lg">
                     Explore Engine Features
@@ -89,6 +89,18 @@
 
         <div class="features-grid">
             <div class="feature-card">
+                <div class="feature-icon">📩</div>
+                <h3 class="feature-title">Notification Keyword Trigger</h3>
+                <p class="feature-desc">Detect incoming notification keywords or codes (OTP, SECRET123, URGENT) from specific apps (Gmail, WhatsApp, SMS) or system-wide.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌿</div>
+                <h3 class="feature-title">Run Task Sub-Workflow</h3>
+                <p class="feature-desc">Invoke another saved task workflow as a subroutine, inheriting variables with built-in recursion safety.</p>
+            </div>
+
+            <div class="feature-card">
                 <div class="feature-icon">⚡</div>
                 <h3 class="feature-title">Toggle Engine Task Action</h3>
                 <p class="feature-desc">Control the Background Automation Engine dynamically inside any task workflow (Turn ON, Turn OFF, or Toggle State).</p>
@@ -98,18 +110,6 @@
                 <div class="feature-icon">⚙️</div>
                 <h3 class="feature-title">Hybrid Background Engine</h3>
                 <p class="feature-desc">Toggle the background engine ON/OFF in Settings or via task actions. When enabled, Wi-Fi, Bluetooth & Location tasks execute 100% instantly even when closed.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">📶</div>
-                <h3 class="feature-title">Reliable Wi-Fi & Bluetooth Triggers</h3>
-                <p class="feature-desc">Dynamic NetworkCallback and Wi-Fi transport matching ensure instant detection of Wi-Fi & BT device connections with 0% idle battery usage.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">🔦</div>
-                <h3 class="feature-title">Blink Torch Action</h3>
-                <p class="feature-desc">Blink camera flashlight for a custom user-defined duration in seconds (1s, 2s, 3s, 5s, 10s or custom).</p>
             </div>
         </div>
     </section>
@@ -127,21 +127,21 @@
                 <div>
                     <label class="sim-label">WHEN THIS EVENT OCCURS:</label>
                     <select id="sim-trigger" class="sim-select">
+                        <option>Notification Keyword Received ("SECRET123" in Gmail)</option>
                         <option>Wi-Fi Connected (Home / Office Network)</option>
                         <option>Bluetooth Device Connected</option>
                         <option>Location Geofence (Office Coordinates, 50m Radius)</option>
                         <option>Incoming Call Received</option>
-                        <option>Scheduled Alarm (09:00 AM - Daily)</option>
                     </select>
                 </div>
                 <div>
                     <label class="sim-label">DO THIS ACTION IN SEQUENCE:</label>
                     <select id="sim-action" class="sim-select">
+                        <option>Run Another Task Workflow ➔ "Flashlight Alert"</option>
                         <option>Toggle Background Engine ➔ Turn ON</option>
-                        <option>Read Aloud (TTS) ➔ "Connected to Wi-Fi"</option>
+                        <option>Read Aloud (TTS) ➔ "Notification Received"</option>
                         <option>Blink Flashlight ➔ 5 Seconds</option>
                         <option>Mobile Data Control ➔ Turn ON / PANEL</option>
-                        <option>Sound Profile ➔ Switch to VIBRATE Mode</option>
                     </select>
                 </div>
             </div>
@@ -160,27 +160,27 @@
     <section id="release-notes" class="section">
         <div class="release-notes-box">
             <span class="version-badge">RELEASE NOTES</span>
-            <h3 class="release-title">AutoTasker Version 4.4.3 Changelog</h3>
+            <h3 class="release-title">AutoTasker Version 4.5.0 Changelog</h3>
             <ul class="release-list">
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Toggle Background Automation Engine Task Action:</strong> Added a new action in Task Builder allowing tasks to programmatically turn ON, turn OFF, or TOGGLE the Background Automation Engine.</div>
+                    <div><strong>Notification Keyword Trigger:</strong> Added a new trigger type to listen for incoming notification content matching specified keywords/codes, with app package filtering options.</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Hybrid Foreground Engine with Settings Toggle:</strong> Control background engine execution anytime in Settings. When ON, Wi-Fi, Bluetooth, Location, and system triggers execute 100% instantly even when the app is closed.</div>
+                    <div><strong>Run Another Task Workflow Action (`TRIGGER_WORKFLOW`):</strong> Programmatically trigger and execute saved task workflows as subroutines.</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Trigger Helper Notices:</strong> Displays clear helper notes in task builder and trigger picker for Wi-Fi, Bluetooth, and Location triggers.</div>
+                    <div><strong>Notification Listener Permission Setup:</strong> Integrated Notification Access permission prompts and status indicators directly in Permissions settings and Task Builder.</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Wi-Fi & Bluetooth Connected Triggers Fix:</strong> Integrated dynamic `ConnectivityManager.NetworkCallback` and fallback Wi-Fi transport matching.</div>
+                    <div><strong>Toggle Background Automation Engine Task Action:</strong> Turn ON, Turn OFF, or TOGGLE the Background Automation Engine dynamically in any task.</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Bottom Sheet Scroll Fix:</strong> Resolved nested scroll gesture conflict in Action & Trigger Picker bottom sheets using `skipPartiallyExpanded = true` and `fillMaxHeight(0.75f)`.</div>
+                    <div><strong>Hybrid Foreground Engine:</strong> Zero-battery idle foreground service mode for instant trigger detection when the app is closed.</div>
                 </li>
             </ul>
         </div>
@@ -192,14 +192,14 @@
         <p class="req-desc">
             Requires Android 8.0 (Oreo) or higher (API level 26+). 100% Privacy Focused — all automation rules, photos, and logs run locally on your device without third-party tracking.
         </p>
-        <a href="AutoTasker-v4.4.3.apk" class="btn-primary btn-lg" download>
-            Download AutoTasker v4.4.3 APK
+        <a href="AutoTasker-v4.5.0.apk" class="btn-primary btn-lg" download>
+            Download AutoTasker v4.5.0 APK
         </a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>AutoTasker © 2026 · Cosmic Android Automation Engine · Version 4.4.3</p>
+        <p>AutoTasker © 2026 · Cosmic Android Automation Engine · Version 4.5.0</p>
     </footer>
 
     <!-- JavaScript Script -->
