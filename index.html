@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTasker v3.7.0 - Cosmic Android Automation Engine</title>
+    <meta name="description" content="AutoTasker v3.7.0 turns system events into powerful automated workflows. Trigger silent photos, send emails offline, launch any installed app, control settings, and manage scheduled alarms with AM/PM & date recurrence.">
+    <meta name="keywords" content="AutoTasker, Android Automation, Tasker Alternative, Event Triggers, Offline Queue, AM PM Alarm, Open App Action, Android APK">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="AutoTasker v3.7.0 - Cosmic Android Automation Engine">
+    <meta property="og:description" content="Automate your Android device with event triggers, offline email queueing, AM/PM scheduling, and app launcher.">
+    <meta property="og:type" content="website">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Animated Canvas Background -->
+    <canvas id="space-canvas"></canvas>
+    <div class="nebula-bg"></div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <a href="#" class="logo-container">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+            </div>
+            <span class="logo-text">AutoTasker</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#simulator">Live Simulator</a></li>
+            <li><a href="#release-notes">v3.7.0 Release Notes</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+        </ul>
+
+        <a href="AutoTasker-v3.7.0.apk" class="btn-primary" download>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download APK <span class="version-num">v3.7.0</span>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="version-badge">
+                <span style="width:8px; height:8px; background:var(--teal-cyan); border-radius:50%; display:inline-block; box-shadow:0 0 10px var(--teal-cyan);"></span>
+                VERSION 3.7.0 RELEASED · OFFLINE QUEUE & APP LAUNCHER
+            </div>
+            <h1 class="hero-title">Automate Your Android. Powered by Cosmic Precision.</h1>
+            <p class="hero-subtitle">
+                AutoTasker turns system events into background automated workflows. Trigger silent photo captures, queue emails while offline, launch any installed app, toggle location state, and manage scheduled alarms with AM/PM & date recurrence.
+            </p>
+            <div class="hero-cta">
+                <a href="AutoTasker-v3.7.0.apk" class="btn-primary" download>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download Direct APK (v3.7.0)
+                </a>
+                <a href="#features" class="btn-secondary">
+                    Explore Engine Features
+                </a>
+            </div>
+        </div>
+
+        <!-- Phone Mockup Container -->
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="app-bar-mock">
+                        <span class="app-title-mock">⚡ AutoTasker v3.7</span>
+                        <span class="service-status-pill">● Engine Active</span>
+                    </div>
+
+                    <!-- Mock Workflow Item 1 -->
+                    <div class="workflow-card-mock">
+                        <span class="mock-tag">WHEN SCREEN ILLUMINATES</span>
+                        <div class="mock-title">Screen Turn On Security</div>
+                        <div class="mock-detail">Capture Silent Photo + Sound Profile</div>
+                    </div>
+
+                    <!-- Mock Workflow Item 2 -->
+                    <div class="workflow-card-mock">
+                        <span class="mock-tag">OFFLINE QUEUE AUTOMATION</span>
+                        <div class="mock-title">Airplane Mode Email Dispatcher</div>
+                        <div class="mock-detail">Queues email offline ➔ Auto-sends when connected</div>
+                    </div>
+
+                    <!-- Mock Workflow Item 3 -->
+                    <div class="workflow-card-mock">
+                        <span class="mock-tag">SCHEDULED RECURRENCE</span>
+                        <div class="mock-title">Daily Morning Routine (09:00 AM)</div>
+                        <div class="mock-detail">Open Particular App: YouTube & Set Volume</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="section-header">
+            <span class="section-tag">Powerful Capabilities</span>
+            <h2 class="section-title">What AutoTasker Can Do</h2>
+            <p style="color:var(--text-muted);">
+                Built with modular triggers and actions, running on an energy-efficient background foreground service.
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                </div>
+                <h3 class="feature-title">Offline Task Queueing (v3.7)</h3>
+                <p class="feature-desc">
+                    Triggering an email action in Airplane mode or without internet? AutoTasker queues the action locally and automatically sends it the moment internet connectivity is restored.
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <h3 class="feature-title">Open Particular App Action (v3.7)</h3>
+                <p class="feature-desc">
+                    Launch any installed application on your device as an action! Includes an interactive Package Manager app picker with real-time app search.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3 class="feature-title">AM/PM & Date Recurrence (v3.7)</h3>
+                <p class="feature-desc">
+                    Configure scheduled tasks with 12-hr AM/PM formatting, optional target date (YYYY-MM-DD), and Daily, Monthly, or Yearly recurrence rules.
+                </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                </div>
+                <h3 class="feature-title">Screen Turn On Triggers</h3>
+                <p class="feature-desc">
+                    Instantly react when your device screen illuminates or unlocks. Execute photo capture, sound profile adjustments, or app launching seamlessly.
+                </p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3 class="feature-title">Location GPS State Monitoring</h3>
+                <p class="feature-desc">
+                    Monitor location provider changes. Automatically trigger rules when GPS location is turned ON or OFF, or fetch live Google Maps coordinates.
+                </p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                </div>
+                <h3 class="feature-title">Silent Security Camera Photo</h3>
+                <p class="feature-desc">
+                    Capture silent front or rear camera photos using CameraX. Perfect for charger theft alerts and intrusion prevention logging.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Workflow Simulator Section -->
+    <section id="simulator" class="section">
+        <div class="section-header">
+            <span class="section-tag">Interactive Preview</span>
+            <h2 class="section-title">Test Workflow Simulator</h2>
+            <p style="color:var(--text-muted);">Select a Trigger and an Action below to simulate how AutoTasker executes rules in real-time.</p>
+        </div>
+
+        <div class="simulator-container">
+            <div class="sim-controls">
+                <div>
+                    <label class="sim-label">WHEN THIS EVENT OCCURS (TRIGGER):</label>
+                    <select id="sim-trigger" class="sim-select">
+                        <option>Screen Turned On</option>
+                        <option>Airplane Mode Toggled (ON)</option>
+                        <option>Location GPS State Changed (OFF)</option>
+                        <option>Scheduled Alarm (09:00 AM - Daily)</option>
+                        <option>Charger Power Connected</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="sim-label">DO THIS ACTION IN SEQUENCE:</label>
+                    <select id="sim-action" class="sim-select">
+                        <option>Open Particular App (e.g. YouTube)</option>
+                        <option>Queue Email (Offline Mode) ➔ Auto Send</option>
+                        <option>Capture Silent Security Photo (Front Camera)</option>
+                        <option>Speak Aloud Text (TTS)</option>
+                        <option>Switch Sound Profile to Silent</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="sim-run-btn" class="btn-primary" style="width:100%; justify-content:center; margin-bottom:1.5rem;">
+                🚀 Test Run Workflow Simulation
+            </button>
+
+            <div id="sim-output-box" class="sim-output">
+                Select a trigger and action above, then click "Test Run Workflow Simulation".
+            </div>
+        </div>
+    </section>
+
+    <!-- Release Notes -->
+    <section id="release-notes" class="section">
+        <div class="release-notes-box">
+            <span class="version-badge">RELEASE NOTES</span>
+            <h3 style="font-family:var(--font-heading); font-size:1.6rem; margin-top:0.5rem;">AutoTasker Version 3.7.0 Changelog</h3>
+            <ul class="release-list">
+                <li class="release-item">
+                    <span class="release-bullet"></span>
+                    <div><strong>Offline Task Queue:</strong> Internet-dependent actions (such as sending emails via SMTP) triggered in Airplane mode or offline are automatically queued into Room DB and sent as soon as network connects.</div>
+                </li>
+                <li class="release-item">
+                    <span class="release-bullet"></span>
+                    <div><strong>Open Particular App Action:</strong> Added `OPEN_APP` action with interactive Package Manager app picker to select and open any installed application.</div>
+                </li>
+                <li class="release-item">
+                    <span class="release-bullet"></span>
+                    <div><strong>AM/PM & Recurrence Time Scheduling:</strong> Alarm scheduling now supports 12-hour AM/PM input, target date (`YYYY-MM-DD`), and Daily, Monthly, or Yearly recurrence rules.</div>
+                </li>
+                <li class="release-item">
+                    <span class="release-bullet"></span>
+                    <div><strong>Event Trigger Reliability:</strong> Fixed `SCREEN_ON` dynamic broadcast listening, `LOCATION_STATE_CHANGED` GPS provider detection, `AIRPLANE_MODE` target state filtering, and `ACTION_BOOT_COMPLETED` background service recovery.</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section id="requirements" class="section" style="text-align:center;">
+        <h3 style="font-family:var(--font-heading); font-size:1.5rem; margin-bottom:1rem;">System Requirements & Privacy</h3>
+        <p style="color:var(--text-muted); max-width:600px; margin:0 auto 2rem auto;">
+            Requires Android 8.0 (Oreo) or higher (API level 26+). 100% Privacy Focused — all automation rules, photos, and logs run locally on your device without third-party tracking.
+        </p>
+        <a href="AutoTasker-v3.7.0.apk" class="btn-primary" download>
+            Download AutoTasker v3.7.0 APK
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>AutoTasker © 2026 · Cosmic Android Automation Engine · Version 3.7.0</p>
+    </footer>
+
+    <!-- JavaScript Script -->
+    <script src="script.js"></script>
+</body>
+</html>
