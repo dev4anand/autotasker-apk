@@ -8,13 +8,15 @@ Official release repository for **AutoTasker** Android application binary builds
 
 | Version | Build Code | Release Date | Download Link |
 | :--- | :--- | :--- | :--- |
-| **v3.4.0** (Latest) | `7` | Sep 13, 2026 | [⬇️ Download AutoTasker-v3.4.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v3.4.0.apk) |
+| **v3.5.0** (Latest) | `8` | Sep 13, 2026 | [⬇️ Download AutoTasker-v3.5.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v3.5.0.apk) |
+| **v3.4.0** | `7` | Sep 13, 2026 | [⬇️ Download AutoTasker-v3.4.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v3.4.0.apk) |
 
 ---
 
-## ✨ Features in v3.4.0
+## ✨ Features in v3.5.0
 
-- 🌐 **Offline-First & Auto-Update Ready**: AutoTasker works 100% offline seamlessly. When internet access is available, it automatically checks GitHub for updates and installs them directly.
+- 🎨 **Enhanced Logo & Symbol Aesthetics**: Scaled up inner logo symbol size (2.25x scaling) and expanded logo badge dimensions across Splash Screen, Dashboard Header, Welcome Screen, and App Icon.
+- 🌐 **Offline-First & Auto-Update Engine**: AutoTasker works 100% offline seamlessly. When internet access is available, it automatically checks GitHub for updates and installs them directly.
 - ⚡ **Workflow Editing**: Click on any rule to edit triggers, actions, parameters, or names without deleting and recreating workflows.
 - 🔐 **Offline Privacy**: Permanent local device storage for Gmail credentials (address & 16-char App Password). No setup re-entry required.
 - 📍 **Location Trigger & Action Flow**: Automatically enable/disable location services and email current coordinates via Google Maps links.
@@ -27,7 +29,7 @@ Official release repository for **AutoTasker** Android application binary builds
 
 ## 🛠️ Installation Instructions
 
-1. Download `AutoTasker-v3.4.0.apk` using the link above.
+1. Download `AutoTasker-v3.5.0.apk` using the link above.
 2. Open the file on your Android phone.
 3. If prompted, allow installation from unknown sources for your browser/file manager.
 4. Open **AutoTasker** and grant the required permissions (Camera, Location, Calls, Notifications).
