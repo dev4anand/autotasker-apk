@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AutoTasker v4.4.1 - Cosmic Android Automation Engine</title>
-    <meta name="description" content="AutoTasker v4.4.1 features Wi-Fi & Bluetooth zero-service trigger detection fixes, bottom sheet scroll fixes, Blink Torch mode with custom duration, and clean UI pills.">
-    <meta name="keywords" content="AutoTasker, Android Automation, Wi-Fi Trigger Fix, Bluetooth Trigger Fix, Blink Torch Action, Mobile Data Toggle, Dedicated Trigger Icons, Android APK">
+    <title>AutoTasker v4.4.2 - Cosmic Android Automation Engine</title>
+    <meta name="description" content="AutoTasker v4.4.2 features Hybrid Foreground Automation Engine with Settings toggle, Wi-Fi & Bluetooth trigger fixes, and bottom sheet scroll fixes.">
+    <meta name="keywords" content="AutoTasker, Android Automation, Wi-Fi Trigger Fix, Bluetooth Trigger Fix, Background Engine Service, Mobile Data Toggle, Android APK">
     
     <!-- Open Graph SEO -->
-    <meta property="og:title" content="AutoTasker v4.4.1 - Cosmic Android Automation Engine">
-    <meta property="og:description" content="Automate your Android device with zero-service Wi-Fi & Bluetooth triggers, smooth bottom sheet scrolling, Blink Torch mode, and instant updates.">
+    <meta property="og:title" content="AutoTasker v4.4.2 - Cosmic Android Automation Engine">
+    <meta property="og:description" content="Automate your Android device with Hybrid Background Engine (Settings toggle), zero battery drain, and instant Wi-Fi/Bluetooth triggers when app is closed.">
     <meta property="og:type" content="website">
 
     <!-- CSS Stylesheet -->
@@ -41,18 +41,18 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#simulator">Live Simulator</a></li>
-            <li><a href="#release-notes">v4.4.1 Release Notes</a></li>
+            <li><a href="#release-notes">v4.4.2 Release Notes</a></li>
             <li><a href="#requirements">Requirements</a></li>
             <li class="nav-mobile-btn">
-                <a href="AutoTasker-v4.4.1.apk" class="btn-primary" download>
-                    Download APK v4.4.1
+                <a href="AutoTasker-v4.4.2.apk" class="btn-primary" download>
+                    Download APK v4.4.2
                 </a>
             </li>
         </ul>
 
-        <a href="AutoTasker-v4.4.1.apk" class="btn-primary nav-desktop-btn" download>
+        <a href="AutoTasker-v4.4.2.apk" class="btn-primary nav-desktop-btn" download>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download APK <span class="version-num">v4.4.1</span>
+            Download APK <span class="version-num">v4.4.2</span>
         </a>
     </nav>
 
@@ -61,19 +61,19 @@
         <div class="hero-content">
             <div class="version-badge">
                 <span class="pulse-dot"></span>
-                VERSION 4.4.1 RELEASED · WI-FI / BT ZERO-SERVICE FIX & BOTTOM SHEET SCROLL FIX
+                VERSION 4.4.2 RELEASED · HYBRID BACKGROUND ENGINE & SETTINGS TOGGLE
             </div>
             
             <h1 class="hero-title">Automate Your Android.<br>Powered by Cosmic Precision.</h1>
             
             <p class="hero-subtitle">
-                AutoTasker turns location arrival and system events into automated workflows with 0% idle battery usage. Featuring fixed zero-service Wi-Fi & Bluetooth triggers, smooth bottom sheet scrolling, Blink Torch mode, and clean text choice pills.
+                AutoTasker turns location arrival and system events into automated workflows with 0% idle battery usage. Featuring a configurable Hybrid Background Engine toggle in Settings so Wi-Fi, Bluetooth, and Location tasks trigger 100% instantly even when the app is closed.
             </p>
 
             <div class="hero-cta">
-                <a href="AutoTasker-v4.4.1.apk" class="btn-primary btn-lg" download>
+                <a href="AutoTasker-v4.4.2.apk" class="btn-primary btn-lg" download>
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    Download Direct APK (v4.4.1)
+                    Download Direct APK (v4.4.2)
                 </a>
                 <a href="#features" class="btn-secondary btn-lg">
                     Explore Engine Features
@@ -88,6 +88,12 @@
         <p class="section-subtitle" style="color:var(--text-muted);">Designed for high reliability, offline efficiency, and smooth Android OS integration.</p>
 
         <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚙️</div>
+                <h3 class="feature-title">Hybrid Background Engine</h3>
+                <p class="feature-desc">Toggle the background engine ON/OFF in Settings. When enabled, Wi-Fi, Bluetooth & Location tasks execute 100% instantly even when closed.</p>
+            </div>
+
             <div class="feature-card">
                 <div class="feature-icon">📶</div>
                 <h3 class="feature-title">Reliable Wi-Fi & Bluetooth Triggers</h3>
@@ -104,12 +110,6 @@
                 <div class="feature-icon">🔦</div>
                 <h3 class="feature-title">Blink Torch Action</h3>
                 <p class="feature-desc">Blink camera flashlight for a custom user-defined duration in seconds (1s, 2s, 3s, 5s, 10s or custom).</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">🧹</div>
-                <h3 class="feature-title">Clean Plain Text Choice Pills</h3>
-                <p class="feature-desc">Removed cluttering emojis from choice buttons for a clean, sleek, professional user interface.</p>
             </div>
         </div>
     </section>
@@ -160,23 +160,23 @@
     <section id="release-notes" class="section">
         <div class="release-notes-box">
             <span class="version-badge">RELEASE NOTES</span>
-            <h3 class="release-title">AutoTasker Version 4.4.1 Changelog</h3>
+            <h3 class="release-title">AutoTasker Version 4.4.2 Changelog</h3>
             <ul class="release-list">
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Wi-Fi & Bluetooth Connected Triggers Zero-Service Fix:</strong> Integrated dynamic `ConnectivityManager.NetworkCallback` and fallback Wi-Fi transport matching (`<unknown ssid>` and wildcard matching) to guarantee 100% reliable trigger execution without running any battery-draining background service.</div>
+                    <div><strong>Hybrid Foreground Engine with Settings Toggle:</strong> Added a switch in Settings ("Run Background Automation Engine") to control background engine execution. When ON, Wi-Fi, Bluetooth, Location, and system triggers execute 100% instantly even when the app is closed.</div>
+                </li>
+                <li class="release-item">
+                    <span class="release-bullet"></span>
+                    <div><strong>Trigger Helper Notices:</strong> Displays clear helper notes in task builder and trigger picker for Wi-Fi, Bluetooth, and Location triggers.</div>
+                </li>
+                <li class="release-item">
+                    <span class="release-bullet"></span>
+                    <div><strong>Wi-Fi & Bluetooth Connected Triggers Fix:</strong> Integrated dynamic `ConnectivityManager.NetworkCallback` and fallback Wi-Fi transport matching (`<unknown ssid>` and wildcard matching).</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
                     <div><strong>Bottom Sheet Scroll Fix:</strong> Resolved nested scroll gesture conflict in Action & Trigger Picker bottom sheets using `skipPartiallyExpanded = true` and `fillMaxHeight(0.75f)`.</div>
-                </li>
-                <li class="release-item">
-                    <span class="release-bullet"></span>
-                    <div><strong>Blink Torch Action:</strong> Custom duration flashlight blinking for 1s, 2s, 3s, 5s, 10s or user input.</div>
-                </li>
-                <li class="release-item">
-                    <span class="release-bullet"></span>
-                    <div><strong>Clean Plain Text Choice Pills:</strong> Removed emojis from choice buttons across all action parameter builders.</div>
                 </li>
             </ul>
         </div>
@@ -188,19 +188,17 @@
         <p class="req-desc">
             Requires Android 8.0 (Oreo) or higher (API level 26+). 100% Privacy Focused — all automation rules, photos, and logs run locally on your device without third-party tracking.
         </p>
-        <a href="AutoTasker-v4.4.1.apk" class="btn-primary btn-lg" download>
-            Download AutoTasker v4.4.1 APK
+        <a href="AutoTasker-v4.4.2.apk" class="btn-primary btn-lg" download>
+            Download AutoTasker v4.4.2 APK
         </a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>AutoTasker © 2026 · Cosmic Android Automation Engine · Version 4.4.1</p>
+        <p>AutoTasker © 2026 · Cosmic Android Automation Engine · Version 4.4.2</p>
     </footer>
 
     <!-- JavaScript Script -->
     <script src="script.js"></script>
-</body>
-</html>.js"></script>
 </body>
 </html>
