@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AutoTasker v4.5.1 - Cosmic Android Automation Engine</title>
-    <meta name="description" content="AutoTasker v4.5.1 features Native Time & Date Pickers, Camera Focus & Warm-up Delay for crisp Silent Photos, Subroutine/Manual Trigger, and Notification Keyword Triggers.">
-    <meta name="keywords" content="AutoTasker, Android Automation, Time Picker, Date Picker, Camera Focus Delay, Subroutine Trigger, Notification Keyword Trigger, Run Task Workflow, Android APK">
+    <title>AutoTasker v4.6.0 - Cosmic Android Automation Engine</title>
+    <meta name="description" content="AutoTasker v4.6.0 features Direct GPS Toggle via WRITE_SECURE_SETTINGS, Accessibility Service Switch Automation, Native Time & Date Pickers, Camera Focus Stabilization, and Subroutine Triggers.">
+    <meta name="keywords" content="AutoTasker, Android Automation, GPS Toggle, WRITE_SECURE_SETTINGS, Accessibility Service, Time Picker, Date Picker, Camera Focus Delay, Subroutine Trigger, Android APK">
     
     <!-- Open Graph SEO -->
-    <meta property="og:title" content="AutoTasker v4.5.1 - Cosmic Android Automation Engine">
-    <meta property="og:description" content="Automate your Android device with Time & Date Pickers, Camera focus stabilization, Subroutine triggers, zero battery drain, and instant background triggers.">
+    <meta property="og:title" content="AutoTasker v4.6.0 - Cosmic Android Automation Engine">
+    <meta property="og:description" content="Automate your Android device with Direct GPS Toggle, Accessibility Switch Clicks, Time & Date Pickers, Camera focus stabilization, Subroutine triggers, zero battery drain.">
     <meta property="og:type" content="website">
 
     <!-- CSS Stylesheet -->
@@ -41,18 +41,18 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#simulator">Live Simulator</a></li>
-            <li><a href="#release-notes">v4.5.1 Release Notes</a></li>
+            <li><a href="#release-notes">v4.6.0 Release Notes</a></li>
             <li><a href="#requirements">Requirements</a></li>
             <li class="nav-mobile-btn">
-                <a href="AutoTasker-v4.5.1.apk" class="btn-primary" download>
-                    Download APK v4.5.1
+                <a href="AutoTasker-v4.6.0.apk" class="btn-primary" download>
+                    Download APK v4.6.0
                 </a>
             </li>
         </ul>
 
-        <a href="AutoTasker-v4.5.1.apk" class="btn-primary nav-desktop-btn" download>
+        <a href="AutoTasker-v4.6.0.apk" class="btn-primary nav-desktop-btn" download>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download APK <span class="version-num">v4.5.1</span>
+            Download APK <span class="version-num">v4.6.0</span>
         </a>
     </nav>
 
@@ -61,19 +61,19 @@
         <div class="hero-content">
             <div class="version-badge">
                 <span class="pulse-dot"></span>
-                VERSION 4.5.1 RELEASED · TIME/DATE PICKERS, CAMERA FOCUS DELAY & SUBROUTINE TRIGGERS
+                VERSION 4.6.0 RELEASED · DIRECT GPS TOGGLE & ACCESSIBILITY AUTOMATION
             </div>
             
             <h1 class="hero-title">Automate Your Android.<br>Powered by Cosmic Precision.</h1>
             
             <p class="hero-subtitle">
-                AutoTasker turns time schedules, notification keywords, location arrival, and system events into automated workflows. Features native time/date pickers, camera focus warm-up delay for crisp silent photos, and standalone subroutine triggers.
+                AutoTasker turns location, time schedules, notifications, and hardware controls into automated workflows. Features direct GPS toggling via WRITE_SECURE_SETTINGS, zero hardcoded fallback location (returns null when off), automated quick switch clicks via Accessibility Service, and camera focus stabilization.
             </p>
 
             <div class="hero-cta">
-                <a href="AutoTasker-v4.5.1.apk" class="btn-primary btn-lg" download>
+                <a href="AutoTasker-v4.6.0.apk" class="btn-primary btn-lg" download>
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    Download Direct APK (v4.5.1)
+                    Download Direct APK (v4.6.0)
                 </a>
                 <a href="#features" class="btn-secondary btn-lg">
                     Explore Engine Features
@@ -89,6 +89,18 @@
 
         <div class="features-grid">
             <div class="feature-card">
+                <div class="feature-icon">📍</div>
+                <h3 class="feature-title">Direct GPS Toggle & Clean Null Location</h3>
+                <p class="feature-desc">Toggle GPS directly via WRITE_SECURE_SETTINGS (ADB grant). Returns null when GPS is disabled—zero hardcoded coordinate fallback.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Accessibility Switch Automation</h3>
+                <p class="feature-desc">Automated 50ms quick switch clicks for Wi-Fi and Mobile Data toggle actions when system APIs restrict non-system toggles.</p>
+            </div>
+
+            <div class="feature-card">
                 <div class="feature-icon">⏰</div>
                 <h3 class="feature-title">Native Time & Date Pickers</h3>
                 <p class="feature-desc">Integrated system TimePickerDialog (12h clock with AM/PM) and DatePickerDialog for precise schedule creation.</p>
@@ -98,18 +110,6 @@
                 <div class="feature-icon">📸</div>
                 <h3 class="feature-title">Camera Focus Warm-Up Delay</h3>
                 <p class="feature-desc">Continuous preview stream and focus stabilization delay (1s, 2s, 3s, 5s) before silent photo captures so images are sharp and clear.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3 class="feature-title">Subroutine / Standalone Trigger</h3>
-                <p class="feature-desc">Standalone trigger for tasks designed strictly to run manually from Home or be called by 'Run Another Task Workflow' action.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">📩</div>
-                <h3 class="feature-title">Notification Keyword Trigger</h3>
-                <p class="feature-desc">Detect incoming notification keywords or codes (OTP, SECRET123, URGENT) from specific apps or system-wide.</p>
             </div>
         </div>
     </section>
@@ -137,10 +137,10 @@
                 <div>
                     <label class="sim-label">DO THIS ACTION IN SEQUENCE:</label>
                     <select id="sim-action" class="sim-select">
+                        <option>Toggle Location / GPS ➔ Turn ON (WRITE_SECURE_SETTINGS)</option>
                         <option>Silent Photo ➔ Front Camera (2s Focus Warm-Up)</option>
                         <option>Run Another Task Workflow ➔ "Flashlight Alert"</option>
                         <option>Toggle Background Engine ➔ Turn ON</option>
-                        <option>Read Aloud (TTS) ➔ "Notification Received"</option>
                         <option>Mobile Data Control ➔ Turn ON / PANEL</option>
                     </select>
                 </div>
@@ -160,23 +160,23 @@
     <section id="release-notes" class="section">
         <div class="release-notes-box">
             <span class="version-badge">RELEASE NOTES</span>
-            <h3 class="release-title">AutoTasker Version 4.5.1 Changelog</h3>
+            <h3 class="release-title">AutoTasker Version 4.6.0 Changelog</h3>
             <ul class="release-list">
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Native Time & Date Pickers:</strong> Integrated system TimePickerDialog (12h AM/PM) and DatePickerDialog directly in Task Builder.</div>
+                    <div><strong>Direct GPS Toggle & Clean Null Location:</strong> Removed hardcoded coordinates fallback—returns clean <code>null</code> when GPS is disabled. Direct GPS toggling via <code>WRITE_SECURE_SETTINGS</code>.</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Camera Focus & Sensor Warm-Up Delay:</strong> Fixed blurry photo captures in Silent Photo action by running an active auto-focus preview stream prior to still capture.</div>
+                    <div><strong>Accessibility Service Switch Automation:</strong> Automated 50ms switch interaction for Wi-Fi and Mobile Data control.</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Subroutine / Manual Only Trigger (`MANUAL_SUBROUTINE`):</strong> Standalone trigger for workflows that run manually or are called as sub-workflows.</div>
+                    <div><strong>Native Time & Date Pickers:</strong> System TimePickerDialog (12h AM/PM) and DatePickerDialog in Task Builder.</div>
                 </li>
                 <li class="release-item">
                     <span class="release-bullet"></span>
-                    <div><strong>Notification Keyword Trigger:</strong> Detect incoming system notification text and codes with app package filters.</div>
+                    <div><strong>Camera Focus & Sensor Warm-Up Delay:</strong> Fixed blurry photo captures in Silent Photo action by running continuous auto-focus preview stream.</div>
                 </li>
             </ul>
         </div>
@@ -188,14 +188,14 @@
         <p class="req-desc">
             Requires Android 8.0 (Oreo) or higher (API level 26+). 100% Privacy Focused — all automation rules, photos, and logs run locally on your device without third-party tracking.
         </p>
-        <a href="AutoTasker-v4.5.1.apk" class="btn-primary btn-lg" download>
-            Download AutoTasker v4.5.1 APK
+        <a href="AutoTasker-v4.6.0.apk" class="btn-primary btn-lg" download>
+            Download AutoTasker v4.6.0 APK
         </a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>AutoTasker © 2026 · Cosmic Android Automation Engine · Version 4.5.1</p>
+        <p>AutoTasker © 2026 · Cosmic Android Automation Engine · Version 4.6.0</p>
     </footer>
 
     <!-- JavaScript Script -->
