@@ -8,17 +8,16 @@ Official release repository for **DevTasker** Android application binary builds 
 
 | Version | Build Code | Release Date | Download Link |
 | :--- | :--- | :--- | :--- |
-| **v5.2.0** (Latest) | `26` | Sep 20, 2026 | [⬇️ Download DevTasker-v5.2.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/DevTasker-v5.2.0.apk) |
+| **v5.3.0** (Latest) | `28` | Sep 20, 2026 | [⬇️ Download DevTasker-v5.3.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/DevTasker-v5.3.0.apk) |
 
 ---
 
-## ✨ Major Features & Additions in v5.2.0
+## ✨ Major Features & Additions in v5.3.0
 
-- ⚠️ **Workflow Deletion Confirmation**: Added confirmation dialog before deleting any task workflow on Dashboard.
-- ℹ️ **Dynamic App Version Display**: Settings screen dynamically queries package version name.
-- 🎨 **Simplified Media Vault UI**: Filter tabs (`All`, `Photos`, `Videos`, `Audio`) cleaned up without emojis.
-- ↕️ **Action Reordering Controls**: Added Move Up / Move Down buttons to task builder action cards.
-- 📝 **Expanded Data Insertion Pills**: Expanded task builder variable insertion pills (`{{timestamp}}`, `{{photo_path}}`, `{{video_path}}`, `{{audio_path}}`, etc.).
+- 🎙️ **Full Microphone Permission & Startup Requests**: All runtime permissions (Microphone/Record Audio, Camera, Location, Phone, Call Log, Bluetooth, Notifications) requested automatically on application launch.
+- ⚙️ **Automated Hardware Switch Toggling Prompt**: Direct permission dialog prompt on startup and dedicated management card in Settings for the DevTasker Accessibility Service.
+- 🛡️ **Comprehensive Permissions Manager**: Settings > Manage Permissions now lists every single permission used by DevTasker with real-time status and direct grant shortcuts.
+- ⚠️ **Actionable Permission Error Feedback**: Instant informative error messages displayed if any hardware permission is missing when executing actions.
 
 ---
 
