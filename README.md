@@ -1,6 +1,6 @@
-# 🚀 AutoTasker APK Releases & Distribution Repository
+# 🚀 DevTasker APK Releases & Distribution Repository
 
-Official release repository for **AutoTasker** Android application binary builds (`.apk`), version configuration (`version.json`), and instant in-app update metadata.
+Official release repository for **DevTasker** Android application binary builds (`.apk`), version configuration (`version.json`), and instant in-app update metadata.
 
 ---
 
@@ -8,26 +8,27 @@ Official release repository for **AutoTasker** Android application binary builds
 
 | Version | Build Code | Release Date | Download Link |
 | :--- | :--- | :--- | :--- |
-| **v4.6.0** (Latest) | `24` | Sep 14, 2026 | [⬇️ Download AutoTasker-v4.6.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/AutoTasker-v4.6.0.apk) |
+| **v5.0.0** (Latest) | `25` | Sep 20, 2026 | [⬇️ Download DevTasker-v5.0.0.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/DevTasker-v5.0.0.apk) |
 
 ---
 
-## ✨ Features & Fixes in v4.6.0
+## ✨ Major Features & Additions in v5.0.0
 
-- 📍 **GPS / Location Direct Toggle & Null Fallback**: Removed hardcoded coordinates fallback (`12.9716, 77.5946`) in location fetch—returns explicit `"null"` when GPS is off. Implemented direct background GPS toggling via `WRITE_SECURE_SETTINGS` (one-tap ADB command grant available in Settings -> Permissions).
-- ⚡ **AutoTasker Accessibility Service**: Automated switch toggling for Wi-Fi and Mobile Data with fast 50ms click interaction.
-- ⏰ **Native Time & Date Pickers**: Integrated system `TimePickerDialog` (12-hour clock with AM/PM) and `DatePickerDialog` into Task Builder.
-- 📸 **Camera Focus Warm-Up Delay**: Fixed blurry photo issue in Silent Photo action by running a continuous auto-focus preview stream for a configurable warm-up delay before capturing.
-- 🔄 **Subroutine / Manual Only Trigger (`MANUAL_SUBROUTINE`)**: Added standalone subroutine trigger for tasks without continuous hardware background triggers.
+- 🚀 **Project Rebranded to DevTasker**: Fully rebranded application interface, launcher, and web distribution portal to **DevTasker**.
+- 🎥 **Silent Video Recording (`SILENT_VIDEO`)**: Record video silently in the background (Camera lens: FRONT or BACK, configurable duration: 5s, 10s, 30s, 60s) saved directly to Media Vault.
+- 🎙️ **Silent Audio Recording (`SILENT_AUDIO`)**: Record voice/audio silently via microphone in background (Duration: 10s, 30s, 60s, 120s) saved directly to Media Vault.
+- 📁 **Media Vault UI**: Bottom navigation bar tab upgraded from "Gallery" to **Media Vault** featuring filter tabs (`All`, `📷 Photos`, `🎥 Videos`, `🎙️ Audio Records`) with an embedded **Audio Player bar**, Video preview, batch delete, and media library export options.
+- 📧 **Email Media Attachments**: Send Email action updated to attach recorded Photos, Videos, or Audio files dynamically to automated SMTP email alerts.
+- 📍 **Direct GPS Toggle & Clean Null Fallback**: Direct background GPS toggle via `WRITE_SECURE_SETTINGS` and explicit `"null"` fallback when GPS is disabled.
 
 ---
 
 ## 🛠️ Installation Instructions
 
-1. Download `AutoTasker-v4.6.0.apk` using the link above.
+1. Download `DevTasker-v5.0.0.apk` using the link above.
 2. Open the file on your Android phone.
 3. If prompted, allow installation from unknown sources for your browser/file manager.
-4. Open **AutoTasker** and grant the required permissions (WRITE_SECURE_SETTINGS via ADB, Accessibility Service, Camera, Location, Calls, Notifications).
+4. Open **DevTasker** and grant the required permissions (WRITE_SECURE_SETTINGS via ADB, Accessibility Service, Camera, Microphone/Record Audio, Location, Calls, Notifications).
 
 ---
 
