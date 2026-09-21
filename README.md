@@ -8,12 +8,13 @@ Official release repository for **DevTasker** Android application binary builds 
 
 | Version | Build Code | Release Date | Download Link |
 | :--- | :--- | :--- | :--- |
-| **v5.4.1** (Latest) | `30` | Sep 20, 2026 | [⬇️ Download DevTasker-v5.4.1.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/DevTasker-v5.4.1.apk) |
+| **v5.4.2** (Latest) | `31` | Sep 21, 2026 | [⬇️ Download DevTasker-v5.4.2.apk](https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/DevTasker-v5.4.2.apk) |
 
 ---
 
-## ✨ Major Features & Additions in v5.4.1
+## ✨ Major Features & Additions in v5.4.2
 
+- 🎨 **Sleek Settings UI Layout**: Upgraded Gmail Setup card to use streamlined icon-only buttons for Test and Edit, preventing text squeezing and wrapping issues.
 - ✉️ **Email Integration Test Button**: Test your Gmail SMTP setup directly in Settings with a single tap, instant status dot indicator, and detailed diagnostic feedback.
 - 🔄 **Automated In-App Update Prompt**: Automatic GitHub release check upon app start, offering instant one-tap download and update installation.
 - ⚡ **Streamlined Build & Deploy Pipeline**: Optimized deployment script with automatic version synchronization and clean process termination.
@@ -26,7 +27,7 @@ Official release repository for **DevTasker** Android application binary builds 
 
 ## 🛠️ Installation Instructions
 
-1. Download `DevTasker-v5.4.1.apk` using the link above.
+1. Download `DevTasker-v5.4.2.apk` using the link above.
 2. Open the file on your Android phone.
 3. If prompted, allow installation from unknown sources for your browser/file manager.
 4. Open **DevTasker** and grant the required permissions (WRITE_SECURE_SETTINGS via ADB, Accessibility Service, Camera, Microphone/Record Audio, Location, Calls, Notifications).

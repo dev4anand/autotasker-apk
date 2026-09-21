@@ -1,7 +1,7 @@
 {
-    "latest_version_code":  30,
-    "latest_version_name":  "5.4.1",
-    "download_url":  "https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/DevTasker-v5.4.1.apk",
+    "latest_version_code":  31,
+    "latest_version_name":  "5.4.2",
+    "download_url":  "https://raw.githubusercontent.com/dev4anand/autotasker-apk/main/DevTasker-v5.4.2.apk",
     "is_app_enabled":  true,
     "kill_switch_message":  "DevTasker is currently under maintenance. Please check back later."
 }
